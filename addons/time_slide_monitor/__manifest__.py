@@ -3,7 +3,7 @@
     'name': 'Slide Time Tracking',
     'version': '1.0',
     'author': 'ITLand',
-    'depends': ['base', 'website', 'website_slides'],
+    'depends': ['base', 'web', 'website_slides'],
     'data': [
         'views/slide_template.xml',
         'security/ir.model.access.csv',
