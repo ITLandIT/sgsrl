@@ -1,7 +1,7 @@
 <odoo>
     <template id="slide_template_inherit" inherit_id="website.layout" name="Inherit Website Layout to Add JS">
         <xpath expr="//head" position="inside">
-            <script type="text/javascript" src="/your_module/static/src/js/slide_timer.js"></script>
+            <script type="text/javascript" src="/slide_time_tracking/static/src/js/slide_timer.js"></script>
         </xpath>
     </template>
 </odoo>
