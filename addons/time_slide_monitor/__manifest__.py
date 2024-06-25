@@ -9,7 +9,7 @@
     ],
     'assets': {
         'web.assets_backend': [
-            'static/src/js/slide_timer.js',
+            'time_slide_monitor/static/src/js/slide_timer.js',
         ],
     },
     'installable': True,
