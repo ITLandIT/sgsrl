@@ -1,0 +1,40 @@
+<!-- views/slide_time_tracking_views.xml -->
+<odoo>
+    <record id="view_slide_time_track_tree" model="ir.ui.view">
+        <field name="name">slide.time.track.tree</field>
+        <field name="model">slide.time.track</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="user_id"/>
+                <field name="slide_id"/>
+                <field name="time_spent"/>
+                <field name="create_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_slide_time_track_form" model="ir.ui.view">
+        <field name="name">slide.time.track.form</field>
+        <field name="model">slide.time.track</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="user_id"/>
+                        <field name="slide_id"/>
+                        <field name="time_spent"/>
+                        <field name="create_date"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_slide_time_track" model="ir.actions.act_window">
+        <field name="name">Slide Time Tracking</field>
+        <field name="res_model">slide.time.track</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_slide_time_tracking" name="Slide Time Tracking" parent="website.menu_website_configuration" action="action_slide_time_track"/>
+</odoo>
