@@ -1,4 +1,3 @@
-<!-- views/slide_template.xml -->
 <odoo>
     <template id="assets_frontend" inherit_id="web.assets_qweb" name="Add custom JS for slide tracking">
         <xpath expr="." position="inside">

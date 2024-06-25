@@ -1,4 +1,3 @@
-// your_module/static/src/js/slide_timer.js
 odoo.define('my_module.slide_timer', function (require) {
     "use strict";
     var ajax = require('web.ajax');

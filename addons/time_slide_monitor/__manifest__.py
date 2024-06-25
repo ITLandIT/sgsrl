@@ -1,4 +1,3 @@
-# __manifest__.py
 {
     'name': 'Slide Time Tracking',
     'version': '1.0',
