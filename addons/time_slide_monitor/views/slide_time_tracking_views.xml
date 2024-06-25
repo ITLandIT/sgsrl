@@ -1,4 +1,3 @@
-<!-- views/slide_time_tracking_views.xml -->
 <odoo>
     <record id="view_slide_time_track_tree" model="ir.ui.view">
         <field name="name">slide.time.track.tree</field>
