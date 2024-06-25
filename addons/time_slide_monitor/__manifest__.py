@@ -10,7 +10,7 @@
     ],
     'assets': {
         'web.assets_backend': [
-            'your_module/static/src/js/slide_timer.js',
+            'static/src/js/slide_timer.js',
         ],
     },
     'installable': True,
