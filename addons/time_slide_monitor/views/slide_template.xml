@@ -1,6 +1,6 @@
 <!-- views/slide_template.xml -->
 <odoo>
-    <template id="assets_frontend" inherit_id="web.assets_backend" name="Add custom JS for slide tracking">
+    <template id="assets_frontend" inherit_id="web.assets_qweb" name="Add custom JS for slide tracking">
         <xpath expr="." position="inside">
             <script type="text/javascript">
                 odoo.define('my_module.slide_timer', function (require) {
