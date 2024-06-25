@@ -1,7 +1,7 @@
 {
-    'name': 'Website Tutorial',
-    'description': 'A simple website tutorial module',
-    'author': 'Your Name',
+    'name': 'Verifica certificazioni',
+    'description': 'Modulo per la verifica dei certificati rilasciati',
+    'author': 'ITLand',
     'version': '2.9',
     'depends': ['website'],
     'data': [
