@@ -1,31 +1,31 @@
-odoo.define('time_slide_monitor.slide_timer', function (require) {
-    "use strict";
-    var ajax = require('web.ajax');
-    var startTime;
-    var timerInterval;
+$(document).ready(function () {
+    odoo.define('time_slide_monitor.slide_timer', function (require) {
+        "use strict";
+        var ajax = require('web.ajax');
+        var startTime;
+        var timerInterval;
 
-    function startTimer() {
-        startTime = new Date().getTime();
-        timerInterval = setInterval(updateTimer, 1000);
-    }
+        function startTimer() {
+            startTime = new Date().getTime();
+            timerInterval = setInterval(updateTimer, 1000);
+        }
 
-    function stopTimer(slide_id) {
-        clearInterval(timerInterval);
-        var endTime = new Date().getTime();
-        var timeSpent = (endTime - startTime) / 1000; // tempo in secondi
-        ajax.jsonRpc('/slide/track_time', 'call', {
-            'slide_id': slide_id,
-            'time_spent': timeSpent
-        });
-    }
+        function stopTimer(slide_id) {
+            clearInterval(timerInterval);
+            var endTime = new Date().getTime();
+            var timeSpent = (endTime - startTime) / 1000; // tempo in secondi
+            ajax.jsonRpc('/slide/track_time', 'call', {
+                'slide_id': slide_id,
+                'time_spent': timeSpent
+            });
+        }
 
-    function updateTimer() {
-        var currentTime = new Date().getTime();
-        var timeSpent = (currentTime - startTime) / 1000; // tempo in secondi
-        document.getElementById('timer-display').innerText = 'Time spent: ' + Math.floor(timeSpent) + ' seconds';
-    }
+        function updateTimer() {
+            var currentTime = new Date().getTime();
+            var timeSpent = (currentTime - startTime) / 1000; // tempo in secondi
+            document.getElementById('timer-display').innerText = 'Time spent: ' + Math.floor(timeSpent) + ' seconds';
+        }
 
-    $(document).ready(function () {
         var slide_id = parseInt($('.oe_slide').data('slide-id'));
         startTimer();
         $(window).on('beforeunload', function () {
