@@ -1,4 +1,4 @@
-odoo.define('slide_time_tracking.slide_timer', function (require) {
+odoo.define('time_slide_monitor.slide_timer', function (require) {
     "use strict";
     var ajax = require('web.ajax');
     var startTime;
