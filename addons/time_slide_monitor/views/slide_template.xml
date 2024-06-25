@@ -1,6 +1,6 @@
 <odoo>
-    <template id="assets_common" inherit_id="web.assets_common" name="Add custom JS for slide tracking">
-        <xpath expr="." position="inside">
+    <template id="slide_template_inherit" inherit_id="website.layout" name="Inherit Website Layout to Add JS">
+        <xpath expr="//head" position="inside">
             <script type="text/javascript" src="/your_module/static/src/js/slide_timer.js"></script>
         </xpath>
     </template>
