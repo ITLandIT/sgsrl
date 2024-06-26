@@ -1,3 +1,5 @@
+/** @odoo-module **/
+
 odoo.define('time_slide_monitor.slide_timer', ['web.ajax'], function (require) {
     "use strict";
     var ajax = require('web.ajax');
