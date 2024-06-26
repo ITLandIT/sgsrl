@@ -1,6 +1,6 @@
 {
     'name': 'Slide Time Tracking',
-    'version': '1.4',  # Aggiornato
+    'version': '1.5',  # Aggiornato
     'author': 'ITLand',
     'depends': ['base', 'web', 'website_slides'],
     'data': [
@@ -9,7 +9,7 @@
     ],
     'assets': {
         'web.assets_frontend': [
-            '/time_slide_monitor/static/src/js/slide_timer.js',
+            'time_slide_monitor/static/src/js/slide_timer.js',
         ],
     },
     'installable': True,
