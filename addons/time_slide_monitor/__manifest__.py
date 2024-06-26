@@ -1,6 +1,6 @@
 {
     'name': 'Slide Time Tracking',
-    'version': '1.6',  # Aggiornato
+    'version': '1.7',  # Incrementa la versione
     'author': 'ITLand',
     'depends': ['base', 'web', 'website_slides'],
     'data': [
